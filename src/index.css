@@ -18,7 +18,9 @@
   --error: hsl(0, 100%, 63%);
 
   --font-header: "Open Sans", sans-serif;
+
   --font-body: "Raleway", sans-serif;
 
-  --font-color: hsl(0, 0%, 100%);
+  --font-color: hsla(0, 0%, 100%, 1);
+  --font-color-opac: hsla(0, 0%, 100%, 0.88);
 }
