@@ -43,15 +43,15 @@ const FooterStyled = styled.footer`
 `;
 export const SocLink = styled.a`
   margin: 0px 16px;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 50%;
-  width: 2.5em;
-  height: 2.5em;
+  width: 2em;
+  height: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
   svg {
-    /* height: ; */
+    height: 50%;
   }
 `;
 export default function Footer() {
