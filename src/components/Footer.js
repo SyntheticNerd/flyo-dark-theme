@@ -1,6 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+
 const FooterStyled = styled.footer`
   background-color: var(--bg-footer);
   padding: 164px 10% 64px;
@@ -12,7 +19,7 @@ const FooterStyled = styled.footer`
     max-width: 320px;
     display: block;
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     img {
       margin-right: 8px;
       object-fit: none;
@@ -30,6 +37,22 @@ const FooterStyled = styled.footer`
       }
     }
   }
+  & #socLinkCont {
+    display: flex;
+  }
+`;
+export const SocLink = styled.a`
+  margin: 0px 16px;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    /* height: ; */
+  }
 `;
 export default function Footer() {
   return (
@@ -38,7 +61,7 @@ export default function Footer() {
       <img src={process.env.PUBLIC_URL + "/images/logo.svg"} alt='' />
       <div id='footer-info'>
         <div>
-          <a href=''>
+          <a href='' style={{ alignItems: "flex-start" }}>
             <img
               src={process.env.PUBLIC_URL + "/images/icon-location.svg"}
               alt=''
@@ -94,10 +117,16 @@ export default function Footer() {
             <a href=''>Privacy</a>
           </li>
         </ul>
-        <div>
-          <img src='' alt='' />
-          <img src='' alt='' />
-          <img src='' alt='' />
+        <div id='socLinkCont'>
+          <SocLink href='#'>
+            <FontAwesomeIcon icon={faFacebookF} color='white' size='lg' />
+          </SocLink>
+          <SocLink href='#'>
+            <FontAwesomeIcon icon={faTwitter} color='white' size='lg' />
+          </SocLink>
+          <SocLink href='#'>
+            <FontAwesomeIcon icon={faInstagram} color='white' size='lg' />
+          </SocLink>
         </div>
       </div>
     </FooterStyled>
