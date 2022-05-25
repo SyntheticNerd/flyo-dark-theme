@@ -21,7 +21,7 @@ const CTAStyled = styled.section`
     p {
       margin: 26px auto;
       line-height: 1.5em;
-      font-size: min(1.5em, max(4vw, 0.8em));
+      font-size: min(1em, max(4vw, 0.8em));
 
     }
     #emailInputWrapper {
