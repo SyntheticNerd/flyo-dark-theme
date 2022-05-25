@@ -37,17 +37,21 @@ const QuotesStyled = styled.section`
     display: flex;
     list-style-type: none;
     width: 1200px;
-    gap: 64px;
+    max-width: 80%;
+    gap: min(64px, 8vw);
     margin: auto;
     position: relative;
+    @media(max-width: 1000px){
+      flex-direction: column;
+    }
     & li {
       background-color: var(--bg-el2);
       padding: 40px 26px 26px;
       border-radius: 4px;
       z-index: 1;
       & > p{
-        font-size: 0.9em;
         line-height: 1.5em;
+        font-size: min(0.9em, max(2vw, 0.8em));
       }
       & .personInfo{
         display: flex;
