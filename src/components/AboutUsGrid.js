@@ -8,8 +8,8 @@ import { ReactComponent as AnyFile } from "../assets/icon-any-file.svg";
 const AboutUsStyled = styled.section`
   background-color: var(--bg-main);
   color: var(--font-color);
-  padding-top: 160px;
-  padding-bottom: 64px;
+  padding-top: 64px;
+  padding-bottom: 0px;
   & ul {
     display: grid;
     grid-template-columns: 1fr 1fr;

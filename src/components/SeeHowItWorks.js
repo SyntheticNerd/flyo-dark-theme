@@ -8,7 +8,7 @@ const CTAStyled = styled.section`
   color: var(--font-color);
   justify-content: center;
   gap: 64px;
-  padding: 64px 0px;
+  padding-bottom: 64px;
   @media (max-width: 700px) {
     flex-direction: column;
   }
